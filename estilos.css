@@ -1,0 +1,379 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+#cabecera {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+    padding: 1% 0;
+    background-color: #C62828;
+    align-items: center;
+    position: relative;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+#cabecera>div:first-child {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+#cabecera h1 {
+    margin: 0;
+    color: #FFFFFF;
+    font: 45px FutureBold, sans-serif;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+#relojTP {
+    color: #FFFFFF;
+    font: bold 14px FutureBold;
+    position: absolute;
+    right: 20px;
+    text-align: right;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #C62828;
+    border-bottom: 1px solid #C62828;
+    background-color: #ffffff;
+    position: sticky;
+    top: 100px;
+    z-index: 999;
+}
+
+#menu>div {
+    flex: 1;
+    max-width: 1000px;
+}
+
+#listamenu {
+    margin: 0;
+    padding: 0;
+}
+
+#menu li {
+    display: inline-block;
+    padding: 14px 20px;
+}
+
+#menu li:hover {
+    background-color: #C62828;
+}
+
+#menu a:hover {
+    color: #ffffff;
+}
+
+#menu a.activo {
+    color: #ff0000;
+    text-decoration: underline;
+}
+
+#menu a {
+    font: bold 15px italic, sans-serif;
+    color: #454545;
+    text-decoration: none;
+}
+
+#menuicono {
+    display: none;
+    text-align: right;
+    width: 100%;
+    height: 40px;
+    background-color: #ffffff;
+    border-top: 1px solid #C62828;
+    border-bottom: 1px solid #C62828;
+    position: sticky;
+    top: 100px;
+    z-index: 999;
+}
+
+#menu-img {
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+main {
+    display: block;
+    width: 100%;
+    background-color: #cccccc;
+}
+
+#contenedor {
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+    gap: 40px;
+    padding: 40px 20px;
+}
+
+#principal {
+    flex: 2 1 0;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    min-width: 300px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#adicional {
+    flex: 1 1 0;
+    background-color: #ffffff;
+    padding: 20px;
+    min-width: 300px;
+    border-left: 4px solid #C62828;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+#adicional h2 {
+    margin-bottom: 10px;
+    font: bold 23px FutureBold;
+}
+
+#adicional h3 {
+    text-align: center;
+    margin-bottom: 10px;
+    font: bold 22px FutureBold;
+}
+
+.primer {
+    text-align: center;
+    font: bold 14px italic, sans-serif;
+    margin: 14px 0;
+}
+
+.segundo {
+    text-align: justify;
+    font: 14px italic, sans-serif;
+    margin: 14px 0;
+}
+
+#adicional ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#adicional li {
+    position: relative;
+    text-align: justify;
+    font: 14px italic, sans-serif;
+    padding-bottom: 10px;
+    padding-left: 20px;
+}
+
+#adicional li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 6px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #C62828;
+    border-right: 2px solid #C62828;
+    transform: rotate(45deg);
+}
+
+#adicional strong {
+    font: 16px FutureBold, sans-serif;
+}
+
+article {
+    padding: 20px;
+}
+
+article h1 {
+    margin-bottom: 15px;
+    font: bold 22px FutureBold;
+}
+
+article h2 {
+    margin: 20px 0;
+    font: bold 23px FutureBold;
+}
+
+article h5 {
+    font: bold 18px FutureBold;
+    margin: 15px 0;
+}
+
+article h6 {
+    font: bold 16px FutureBold;
+    margin-top: 25px;
+}
+
+article h3 {
+    text-align: center;
+    margin-bottom: 15px;
+    font: bold 25px FutureBold;
+}
+
+article h4 {
+    text-align: center;
+    margin: 20px;
+    font: bold 18px FutureBold;
+}
+
+@font-face {
+    font-family: "FutureBold";
+    src: url("fonts/futura-bold-italic.ttf");
+}
+
+article p {
+    text-align: justify;
+    font: 14px italic, sans-serif;
+    margin: 15px 0;
+    color: #333333;
+}
+
+figure {
+    text-align: center;
+    margin: 0;
+}
+
+figure img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin: 15px 0;
+    transition: transform 0.5s ease;
+}
+
+figure:hover img {
+    transform: scale(1.1);
+}
+
+#pielogo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #232323;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    gap: 30px;
+    padding: 40px 20px;
+}
+
+.seccionpie {
+    flex: 1;
+}
+
+.seccionpie h1 {
+    font: bold 18px italic, helvetica, sans-serif;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.seccionpie p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin: 5px 0;
+    color: #ffffff;
+}
+
+.seccionpie a {
+    font: 14px italic, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.seccionpie a:hover {
+    color: #D32F2F;
+}
+
+.seccionpie p::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 10px;
+    border-top: 2px solid #C62828;
+    border-right: 2px solid #C62828;
+    transform: rotate(45deg);
+}
+
+.redessociales ul {
+    display: flex;
+    padding: 0;
+    list-style: none;
+    margin-top: 20px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background-color: #444444;
+    color: #ffffff;
+    border-radius: 50%;
+    font-size: 16px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.redes:hover {
+    background-color: #C62828;
+    transform: scale(1.1);
+}
+
+.redes i {
+    color: #ffffff;
+}
+
+.redes:hover i {
+    color: #ffffff;
+}
+
+#pielogo-2 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #000000;
+}
+
+.derechos {
+    flex: 1;
+    max-width: 1000px;
+    text-align: center;
+    background-color: #000000;
+}
+
+.seccionpie-2 {
+    color: #ffffff;
+    padding: 10px 0px;
+}
+
+.seccionpie-2 p,
+.seccionpie-2 address,
+.seccionpie-2 small {
+    margin: 0;
+    padding: 0;
+}
